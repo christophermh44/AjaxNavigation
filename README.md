@@ -22,14 +22,14 @@ Then, you can call Ajax-navigation when your page is ready to use:
 
 ```javascript
 window.addEventListener('load', function() {
-		var nav = new AjaxNavigation({
-			beforeLoad: function() {
-        // You can change your favicon here to indicates that the page is loading…
-        // This is the equivalent of beforeUnload, but you cannot prevent it for now.
-			},
-			afterLoad: function() {
-				// You can now restore your favicon and initialize everything else (like JS frameworks, event binds, service workers registering, …)
-      }
-    });
+	var nav = new AjaxNavigation({
+		beforeLoad: function() {
+			// You can change your favicon here to indicates that the page is loading…
+			// This is the equivalent of beforeUnload, but you cannot prevent it for now.
+		},
+		afterLoad: function() {
+			// You can now restore your favicon and initialize everything else (like JS frameworks, event binds, service workers registering, …)
+		}
+	});
 });
 ```
